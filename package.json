@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/johannpereze/cursoNodeFernandoHerrera#readme",
   "dependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "yargs": "^17.1.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
