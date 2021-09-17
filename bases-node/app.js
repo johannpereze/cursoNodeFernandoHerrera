@@ -13,6 +13,6 @@ console.clear();
 // const [, base = 0] = arg3.split("=");
 // console.log(base);
 
-crearArchivo(argv.b, argv.l)
+crearArchivo(argv.b, argv.l, argv.h)
   .then((nombreArchivo) => console.log(nombreArchivo, "ha sido creado".rainbow))
   .catch((err) => console.log(err));
