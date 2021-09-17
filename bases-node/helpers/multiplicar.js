@@ -16,7 +16,7 @@ const crearArchivo = async (base = 5, l = false, h) => {
       salida += `${base} x ${i} = ${base * i}\n`;
       consola += `${base} ${"x".green} ${i} ${"=".green} ${base * i}\n`;
     }
-    fs.writeFileSync(`tabla-${base}.txt`, salida);
+    fs.writeFileSync(`./bases-node/salida/tabla-${base}.txt`, salida);
     if (l===true) {
       console.log(consola);
     }
