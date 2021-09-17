@@ -10,13 +10,15 @@ const crearArchivo = async (base = 5, l = false, h) => {
     console.log("===============");
 
     let salida = "";
+    let consola = "";
 
     for (let i = 1; i <= h; i++) {
-      salida += `${base} ${"x".green} ${i} ${"=".green} ${base * i}\n`;
+      salida += `${base} x ${i} = ${base * i}\n`;
+      consola += `${base} ${"x".green} ${i} ${"=".green} ${base * i}\n`;
     }
     fs.writeFileSync(`tabla-${base}.txt`, salida);
     if (l===true) {
-      console.log(salida);
+      console.log(consola);
     }
     return `tabla-${base}.txt`;
   } catch (err) {
